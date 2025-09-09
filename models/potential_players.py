@@ -1,9 +1,9 @@
 from utils.helper import load_config
 from .team import Team
-
+from .player import Player
      
 
-def get_potential_players(team: Team) -> list:
+def get_potential_players(team: Team) -> list[Player]:
     config = load_config()
     rules = config["rules for unused players"]
 
