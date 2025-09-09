@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <year>2025</year>
+    <season_id>26</season_id>
+    <base_club_url>https://www.football.org.il/en/clubs/club/?club_id={club_id}&amp;</base_club_url>
+    <base_team_url>https://www.football.org.il/team-details/?team_id={team_id}&amp;season_id=26</base_team_url>
+    <base_game_url>https://www.football.org.il/leagues/games/game/?game_id={game_id}&amp;</base_game_url>
+    <base_player_url>https://www.football.org.il/players/player/?player_id={player_id}&amp;season_id=26</base_player_url>
+    <base_team_games_url>https://www.football.org.il/team-details/team-games/?team_id={team_id}&amp;season_id=26</base_team_games_url>
+    <base_team_players_list_url>https://www.football.org.il/team-details/?itemid=%7B2AE09DED-5019-4C49-BFD5-4458C66F9D24%7D&amp;team_id={team_id}&amp;season_id=26</base_team_players_list_url>
+
+    <rules_for_unused_players>
+        <minutes_percentages>
+            <minimum_percentages>25</minimum_percentages>
+            <maximum_percentages>50</maximum_percentages>
+        </minutes_percentages>
+        <minutes_rank>
+            <minimum_rank>12</minimum_rank>
+            <maximum_rank>18</maximum_rank>
+        </minutes_rank>
+    </rules_for_unused_players>
+
+    <clubs>
+        <club>
+            <name>Maccabi Tel Aviv</name>
+            <club_id>1061</club_id>
+            <teams>
+                <team>
+                    <name>U19</name>
+                    <team_id>1073</team_id>
+                </team>
+                <team>
+                    <name>Youth A</name>
+                    <team_id>1593</team_id>
+                </team>
+                <team>
+                    <name>Youth B</name>
+                    <team_id>1607</team_id>
+                </team>
+                <team>
+                    <name>Youth C</name>
+                    <team_id>1338</team_id>
+                </team>
+            </teams>
+        </club>
+
+        <club>
+            <name>Maccabi Petah Tikva</name>
+            <club_id>1064</club_id>
+            <teams>
+                <team>
+                    <name>U19</name>
+                    <team_id>1146</team_id>
+                </team>
+                <team>
+                    <name>Youth A</name>
+                    <team_id>1598</team_id>
+                </team>
+                <team>
+                    <name>Youth B</name>
+                    <team_id>1052</team_id>
+                </team>
+                <team>
+                    <name>Youth C</name>
+                    <team_id>1231</team_id>
+                </team>
+            </teams>
+        </club>
+
+        <club>
+            <name>Maccabi Haifa</name>
+            <club_id>1005</club_id>
+            <teams>
+                <team>
+                    <name>U19</name>
+                    <team_id>1131</team_id>
+                </team>
+                <team>
+                    <name>Youth A</name>
+                    <team_id>1023</team_id>
+                </team>
+                <team>
+                    <name>Youth B</name>
+                    <team_id>1432</team_id>
+                </team>
+                <team>
+                    <name>Youth C</name>
+                    <team_id>1029</team_id>
+                </team>
+            </teams>
+        </club>
+
+        <club>
+            <name>Hapoel Tel Aviv</name>
+            <club_id>2176</club_id>
+            <teams>
+                <team>
+                    <name>U19</name>
+                    <team_id>2367</team_id>
+                </team>
+                <team>
+                    <name>Youth A</name>
+                    <team_id>2303</team_id>
+                </team>
+                <team>
+                    <name>Youth B</name>
+                    <team_id>2227</team_id>
+                </team>
+                <team>
+                    <name>Youth C</name>
+                    <team_id>2204</team_id>
+                </team>
+            </teams>
+        </club>
+    </clubs>
+</config> 
