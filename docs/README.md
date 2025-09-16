@@ -34,3 +34,8 @@ Players are selected if they meet each one of the following conditions:
      - Did not start in any of these matches.
      - Played no more than 90 minutes in total across these matches.
 
+
+## License
+This project is proprietary software.  
+**All rights reserved © 2025 Ofek Amsalem.**  
+The code is publicly available for viewing purposes only and may not be used, copied, modified, or distributed without explicit permission.
