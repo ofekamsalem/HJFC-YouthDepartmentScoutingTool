@@ -64,3 +64,8 @@ All parameters are configurable and can be tuned to the preferences and scouting
 
 
 
+
+## License
+This project is proprietary software.  
+**All rights reserved © 2025 Ofek Amsalem.**  
+The code is publicly available for viewing purposes only and may not be used, copied, modified, or distributed without explicit permission.
