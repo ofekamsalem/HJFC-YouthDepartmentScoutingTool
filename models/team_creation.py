@@ -9,7 +9,6 @@ from .game import Game
 
 # work! we have a new Team object
 def create_team(team_details: dict) -> Team:
-    # team_dict = select_team()
     team_name = team_details['team name']
     team_id = team_details['team id']
     club_name = team_details['club name']

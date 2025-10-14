@@ -1,36 +1,66 @@
-# Hapoel Jerusalem FC - youth scouting tool
+# Hapoel Jerusalem FC – Youth Department Scouting Tool
 
 ![Project image](project_picture.png)
 
-# About the project
+## About the Project
 
-This project is a scouting and monitoring tool designed to assist the youth department of Hapoel Jerusalem Football Club in identifying potential player prospects.
-The tool scrapes data from the Israeli Football Association website, processes youth team player statistics, and automatically generates a professional report highlighting players that meet specific criteria.
+This project is a scouting and monitoring tool designed to assist the youth department of Hapoel Jerusalem Football Club in identifying promising player prospects.
+
+The tool scrapes data from the Israeli Football Association (IFA) website, processes youth team player statistics, and automatically generates a professional scouting report highlighting players who meet specific criteria.
+
+At the start of the program, the user can choose between three scouting focuses:
+
+1. Rotation-edge players – players on the edge of the squad rotation.  
+2. Players playing above their age group – players competing in older age categories.  
+3. Top scorers – high-impact attacking players.
 
 ---
 
 ## Project Goals
 
-- Scrape player data (minutes played, squad participation) from U14–U17 teams - ("Nearim A, Nearim B, Nearim C") 
-- Analyze and filter players based on well-defined scouting criteria.
-- Allow easy configuration via XML file.
-- Build the project in a modular and maintainable way.
+- Scrape player data such as minutes played, goals, and squad participation from U15–U19 teams (“Noar”, “Nearim A”, “Nearim B”, “Nearim C”).  
+- Analyze and filter players based on well-defined scouting criteria.  
+- Allow easy configuration through an external XML configuration file.  
+- Build the project in a modular, scalable, and maintainable way.
 
 ---
 
 ## Scouting Criteria
 
-Players are selected if they meet each one of the following conditions:
+A potential player is identified if they meet the conditions defined for the selected scouting focus:
 
-1. **Rotation Position:**
-   - Players ranked 12th to 18th in the squad based on minutes played in the season.
+### 1. Rotation-Edge Players
 
-2. **Percentage of Minutes Played:**
-   - Players who played 25–50% of the total minutes of the player with the maximum minutes.
-     
-3. **Participation in Last 3 Matches:**
-   - Players who:
-     - Were in the squad list for at least one of the last three matches.
-     - Did not start in any of these matches.
-     - Played no more than 90 minutes in total across these matches.
+**Rotation Position:** Players ranked 12th–18th in the squad based on total minutes in the season.  
+**Percentage of Minutes Played:** 25–50% of the minutes compared to the team’s max-minutes player.  
+**Participation in Last 3 Matches:** Listed in the squad for at least one of the last three matches, did not start in any of them, and played no more than 90 minutes in total across those matches.
+
+---
+
+### 2. Playing Above Their Age Group
+
+- Played at least 50% of total minutes with a team above their age group.
+
+---
+
+### 3. Top Scorers
+
+- Ranked 5th or higher on the team’s goals leaderboard.
+
+---
+
+## Configuration
+
+All parameters are configurable and can be tuned to the preferences and scouting philosophy of the Youth Department Manager – Mr. Lior Houga (e.g., thresholds, ranks, match windows, etc.) via the project’s XML config file.
+
+---
+
+## How to Run (Python + Selenium)
+
+### Prerequisites
+- Python 3.10–3.12 recommended  
+- Google Chrome or Microsoft Edge installed  
+- Selenium 4+ 
+
+
 

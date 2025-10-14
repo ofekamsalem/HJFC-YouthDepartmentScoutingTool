@@ -1,7 +1,10 @@
 {
     "year": "2025",
     "season id": "26",
-    "base club url": "https://www.football.org.il/en/clubs/club/?club_id={club_id}&",
+    "base league url en": "https://www.football.org.il/en/leagues/league/?league_id={league_id}&season_id=26",
+    "base club url en": "https://www.football.org.il/en/clubs/club/?club_id={club_id}&",
+    "base club url": "https://www.football.org.il/clubs/club/?club_id={club_id}&",
+    "base team url en": "https://www.football.org.il/en/team-details/?team_id={team_id}&season_id=26",
     "base team url": "https://www.football.org.il/team-details/?team_id={team_id}&season_id=26",
     "base game url": "https://www.football.org.il/leagues/games/game/?game_id={game_id}&",
     "base player url": "https://www.football.org.il/players/player/?player_id={player_id}&season_id=26",
@@ -17,6 +20,14 @@
             "maximum": "18"
         }
     },
+    "rules for key players": {
+        "minimum minutes percentages": {
+            "percentages": "50"
+        },
+        "goals": {
+            "minimum rank in scoring leaders table": "5"
+        }
+    },
     "clubs": {
         "Maccabi Tel Aviv": {
             "club id": "1061",
@@ -26,15 +37,15 @@
                     "team id": "1073"
                 },
                 {
-                    "team name": "Youth A",
+                    "team name": "U17",
                     "team id": "1593"
                 },
                 {
-                    "team name": "Youth B",
+                    "team name": "U16",
                     "team id": "1607"
                 },
                 {
-                    "team name": "Youth C",
+                    "team name": "U15",
                     "team id": "1338"
                 }
             ]
@@ -47,15 +58,15 @@
                     "team id": "1146"
                 },
                 {
-                    "team name": "Youth A",
+                    "team name": "U17",
                     "team id": "1598"
                 },
                 {
-                    "team name": "Youth B",
+                    "team name": "U16",
                     "team id": "1052"
                 },
                 {
-                    "team name": "Youth C",
+                    "team name": "U15",
                     "team id": "1231"
                 }
             ]
@@ -68,15 +79,15 @@
                     "team id": "1131"
                 },
                 {
-                    "team name": "Youth A",
+                    "team name": "U17",
                     "team id": "1023"
                 },
                 {
-                    "team name": "Youth B",
+                    "team name": "U16",
                     "team id": "1432"
                 },
                 {
-                    "team name": "Youth C",
+                    "team name": "U15",
                     "team id": "1029"
                 }
             ]
@@ -89,15 +100,15 @@
                     "team id": "2367"
                 },
                 {
-                    "team name": "Youth A",
+                    "team name": "U17",
                     "team id": "2303"
                 },
                 {
-                    "team name": "Youth B",
+                    "team name": "U16",
                     "team id": "2227"
                 },
                 {
-                    "team name": "Youth C",
+                    "team name": "U15",
                     "team id": "2204"
                 }
             ]

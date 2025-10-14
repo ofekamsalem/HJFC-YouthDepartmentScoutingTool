@@ -5,28 +5,39 @@ from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import urlparse, parse_qs, urljoin
 from selenium import webdriver
 import re
-# from models.create_team import team_creation
 from models.team import Team
 from utils.helper import load_config
 
 
-
 def parse_games(team: Team) -> None:   
+    games_to_remove = []
     for game in team.games:
-        parse_game(game.game_ID, game.date, team)
+        if not parse_game(game.game_ID, game.date, team):
+            games_to_remove.append(game)
+    
+    for game in games_to_remove:
+        team.games.remove(game)
+
+def game_exists(driver) -> bool:
+    """Check if the game page shows the 'משחק לא קיים' message"""
+    non_existent_messages = driver.find_elements(By.XPATH, "//*[contains(text(), 'משחק לא קיים')]")
+    return len(non_existent_messages) == 0
 
 
-
-
-
-def parse_game(game_id, date, team: Team) -> None:
+def parse_game(game_id, date, team: Team) -> bool:
     config = load_config()
     base_game_url = config['base game url']
     game_url = base_game_url.format(game_id=game_id)
 
     driver = webdriver.Chrome()
-    wait = WebDriverWait(driver,20)
+    wait = WebDriverWait(driver, 20)
     driver.get(game_url)
+    
+    # Check if game exists
+    if not game_exists(driver):
+        driver.quit()
+        return False
+    
     wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "div.players-cont")))
 
     # it works! check if player is in squad
@@ -61,7 +72,7 @@ def parse_game(game_id, date, team: Team) -> None:
         if player_id not in in_squad_ids:
             in_squad = False
             started = False
-            team.team_players[player_id].add_game(game_id,date,started,in_squad,subbed_in,subbed_out,subbed_in_min,subbed_out_min,goals)
+            team.team_players[player_id].add_game(game_id, date, started, in_squad, subbed_in, subbed_out, subbed_in_min, subbed_out_min, goals)
             continue
 
         # players that in the squad but didn't played:
@@ -70,7 +81,7 @@ def parse_game(game_id, date, team: Team) -> None:
             started = False
             subbed_in = False
             subbed_out = False
-            team.team_players[player_id].add_game(game_id,date,started,in_squad,subbed_in,subbed_out,subbed_in_min,subbed_out_min,goals)
+            team.team_players[player_id].add_game(game_id, date, started, in_squad, subbed_in, subbed_out, subbed_in_min, subbed_out_min, goals)
             continue
         # ====================================================================================================
 
@@ -87,7 +98,6 @@ def parse_game(game_id, date, team: Team) -> None:
 
             elif "change-up" in cls and minute is not None:
                 subbed_in_min = minute
-
 
         # minutes logic covering all cases and updating bool variables
         if not in_squad:
@@ -121,6 +131,7 @@ def parse_game(game_id, date, team: Team) -> None:
             if goal.text.strip() == 'שער':
                 goals += 1
 
-        team.team_players[player_id].add_game(game_id,date,started,in_squad,subbed_in,subbed_out,subbed_in_min,subbed_out_min,goals)
+        team.team_players[player_id].add_game(game_id, date, started, in_squad, subbed_in, subbed_out, subbed_in_min, subbed_out_min, goals)
+    
     driver.quit()
-
+    return True

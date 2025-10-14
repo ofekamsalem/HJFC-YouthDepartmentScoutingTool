@@ -25,6 +25,7 @@ class Player:
     minutes_percentage: float = 0.0  
     minutes_rank: int = 0
     total_goals: int = 0
+    goals_rank: int  = 0
     involvements: List[Involvement] = field(default_factory=list)  
 
     # calculate total minutes the player has played

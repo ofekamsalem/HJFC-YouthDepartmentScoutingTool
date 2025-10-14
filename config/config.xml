@@ -2,7 +2,10 @@
 <config>
     <year>2025</year>
     <season_id>26</season_id>
-    <base_club_url>https://www.football.org.il/en/clubs/club/?club_id={club_id}&amp;</base_club_url>
+    <base_league_url_en>https://www.football.org.il/en/leagues/league/?league_id={league_id}&amp;season_id=26</base_league_url_en>
+    <base_club_url_en>https://www.football.org.il/en/clubs/club/?club_id={club_id}&amp;</base_club_url_en>
+    <base_club_url>https://www.football.org.il/clubs/club/?club_id={club_id}&amp;</base_club_url>
+    <base_team_url_en>https://www.football.org.il/en/team-details/?team_id={team_id}&amp;season_id=26</base_team_url_en>
     <base_team_url>https://www.football.org.il/team-details/?team_id={team_id}&amp;season_id=26</base_team_url>
     <base_game_url>https://www.football.org.il/leagues/games/game/?game_id={game_id}&amp;</base_game_url>
     <base_player_url>https://www.football.org.il/players/player/?player_id={player_id}&amp;season_id=26</base_player_url>
@@ -20,6 +23,15 @@
         </minutes_rank>
     </rules_for_unused_players>
 
+    <rules_for_key_players>
+        <minimum_minutes_percentages>
+            <percentages>50</percentages>
+        </minimum_minutes_percentages>
+        <goals>
+            <minimum_rank_in_scoring_leaders_table>5</minimum_rank_in_scoring_leaders_table>
+        </goals>
+    </rules_for_key_players>
+
     <clubs>
         <club>
             <name>Maccabi Tel Aviv</name>
@@ -30,15 +42,15 @@
                     <team_id>1073</team_id>
                 </team>
                 <team>
-                    <name>Youth A</name>
+                    <name>U17</name>
                     <team_id>1593</team_id>
                 </team>
                 <team>
-                    <name>Youth B</name>
+                    <name>U16</name>
                     <team_id>1607</team_id>
                 </team>
                 <team>
-                    <name>Youth C</name>
+                    <name>U15</name>
                     <team_id>1338</team_id>
                 </team>
             </teams>
@@ -53,15 +65,15 @@
                     <team_id>1146</team_id>
                 </team>
                 <team>
-                    <name>Youth A</name>
+                    <name>U17</name>
                     <team_id>1598</team_id>
                 </team>
                 <team>
-                    <name>Youth B</name>
+                    <name>U16</name>
                     <team_id>1052</team_id>
                 </team>
                 <team>
-                    <name>Youth C</name>
+                    <name>U15</name>
                     <team_id>1231</team_id>
                 </team>
             </teams>
@@ -76,15 +88,15 @@
                     <team_id>1131</team_id>
                 </team>
                 <team>
-                    <name>Youth A</name>
+                    <name>U17</name>
                     <team_id>1023</team_id>
                 </team>
                 <team>
-                    <name>Youth B</name>
+                    <name>U16</name>
                     <team_id>1432</team_id>
                 </team>
                 <team>
-                    <name>Youth C</name>
+                    <name>U15</name>
                     <team_id>1029</team_id>
                 </team>
             </teams>
@@ -99,15 +111,15 @@
                     <team_id>2367</team_id>
                 </team>
                 <team>
-                    <name>Youth A</name>
+                    <name>U17</name>
                     <team_id>2303</team_id>
                 </team>
                 <team>
-                    <name>Youth B</name>
+                    <name>U16</name>
                     <team_id>2227</team_id>
                 </team>
                 <team>
-                    <name>Youth C</name>
+                    <name>U15</name>
                     <team_id>2204</team_id>
                 </team>
             </teams>

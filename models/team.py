@@ -1,7 +1,6 @@
 from dataclasses import dataclass, field
 from .player import Player
 from .player import AgeGroup
-# from parsers.parse_game import parse_games
 from .game import Game
 from typing import List
 from selenium import webdriver
@@ -10,30 +9,15 @@ from typing import Optional, List
 from utils.helper import load_config
 
 
-
-
-
-def _age_to_group(age: int) -> AgeGroup | None:
-    # Map age → AgeGroup (tweak the rules if your league uses different cutoffs)
-    if age >= 18:
-        return AgeGroup.U19
-    if age == 17:
-        return AgeGroup.U17
-    if age == 16:
-        return AgeGroup.U16
-    if age == 15:
-        return AgeGroup.U15
-    return None
-
 def get_team_age_group(team_name: str) -> AgeGroup | None:
     match team_name:  
         case "U19":
             return AgeGroup.U19
-        case "Youth A":
+        case "U17":
             return AgeGroup.U17
-        case "Youth B":
+        case "U16":
             return AgeGroup.U16
-        case "Youth C":
+        case "U15":
             return AgeGroup.U15
         case _:
             return None  
@@ -70,14 +54,22 @@ class Team:
     def calc_minutes_percentage_for_each_player(self) -> None:
         max_minutes_player = self.max_minutes_of_all_players()
         for player in self.team_players.values():
-            player.minutes_percentage = 100 * (player.total_minutes / max_minutes_player.total_minutes)
-    
+            # player.minutes_percentage = 100 * (player.total_minutes / max_minutes_player.total_minutes)
+            player.minutes_percentage = 100 * (player.total_minutes / (90 * len(self.games)))
+
+
     # for each player, calculate player position in table relative to the top-minutes player
     def calc_minutes_rank_for_each_player(self) -> None:
         players_sorted_by_minutes = sorted(self.team_players.values(), key=lambda p: p.total_minutes, reverse=True)
         for index, player in enumerate(players_sorted_by_minutes, start=1):
             player.minutes_rank = index
     
+    # for each player, calculate player position in table relative to the top-minutes player
+    def calc_scoring_rank_for_each_player(self) -> None:
+        players_sorted_by_goals = sorted(self.team_players.values(), key=lambda p: p.total_goals, reverse=True)
+        for index, player in enumerate(players_sorted_by_goals, start=1):
+            player.goals_rank = index
+
     # set group age of the team
     def set_team_age_group(self) -> None:
         self.age_group = get_team_age_group(self.team_name)
@@ -95,8 +87,7 @@ class Team:
             lis = data_list.find_elements(By.TAG_NAME, "li")
             birth_text = lis[0].text   
             year_of_birth = int(birth_text.split()[-1].split("/")[1])
-            age = season_year - year_of_birth
-            self.team_players[pid].age_group = _age_to_group(age) 
+            self.team_players[pid].age_group = season_year - year_of_birth 
         driver.quit()
 
             
