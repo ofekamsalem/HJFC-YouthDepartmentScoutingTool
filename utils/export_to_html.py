@@ -81,8 +81,8 @@ def export(players):
 
     html_content = "\n".join(html_parts)
 
-    filename = "players_" + datetime.now().strftime("%d-%m-%Y_%H-%M-%S") + ".html"
+    filename = "potential players_" + datetime.now().strftime("%d-%m-%Y_%H-%M-%S") + ".html"
     with open(filename, "w", encoding="utf-8") as f:
         f.write(html_content)
 
-    print("New file:", filename)
+    print("New file has been created, the location is in the folder. File's name:", filename)

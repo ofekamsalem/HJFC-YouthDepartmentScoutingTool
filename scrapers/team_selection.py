@@ -62,7 +62,7 @@ def select_option(options, include_other=True):
             club_id = input("Enter club ID: ")
             return {"value": club_id, "is_other": True}
         else:
-            print("enter a valid number")
+            print("Enter a valid number")
 
 
 # Select a team:

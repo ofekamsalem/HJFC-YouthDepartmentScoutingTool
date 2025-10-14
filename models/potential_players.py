@@ -31,10 +31,8 @@ def get_potential_players(type: int,team: Team) -> list[Player]:
             if type == 1 and min_percentages <= mins_percentages <= max_percentages and min_rank <= mins_rank <= max_rank and played_under_90_mins and in_squad_last_3_games and not_started_last_3_games:
                 potential_players.append(player) 
                 return potential_players
-            # print(mins_percentages,player.age_group,team.age_group)
 
             if type == 2 and mins_percentages >= mins_percentages_for_key_players and player.age_group < team.age_group:
-                 print("ok  ")
                  potential_players.append(player)
                  return potential_players
             
