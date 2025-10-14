@@ -29,7 +29,7 @@ At the start of the program, the user can choose between three scouting focuses:
 
 A potential player is identified if they meet the conditions defined for the selected scouting focus:
 
-1. Rotation-Edge Players
+### 1. Rotation-Edge Players
 
 **Rotation Position:** Players ranked 12th–18th in the squad based on total minutes in the season.  
 **Percentage of Minutes Played:** 25–50% of the minutes compared to the team’s max-minutes player.  
@@ -37,13 +37,13 @@ A potential player is identified if they meet the conditions defined for the sel
 
 ---
 
-## 2. Playing Above Their Age Group
+### 2. Playing Above Their Age Group
 
 - Played at least 50% of total minutes with a team above their age group.
 
 ---
 
-## 3. Top Scorers
+### 3. Top Scorers
 
 - Ranked 5th or higher on the team’s goals leaderboard.
 
