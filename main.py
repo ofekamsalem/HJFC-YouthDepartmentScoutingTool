@@ -5,12 +5,6 @@ from utils.export_to_html import export
 from scrapers.teams_names_and_ids_scraper import get_team_id_name_map
 from models.team import Team
 
-# def create_team(team_details) -> Team:
-#     team_name = ""
-#     team_id = team_details['team id']
-#     club_name = team_details['team_id']
-#     club_id = "" 
-#     team = Team(club_name, club_id, team_name, team_id)
 
 def main():
     print("Select the type of players you want to analyze:")
