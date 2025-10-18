@@ -13,12 +13,13 @@ def export(players):
         "club_name": "שם מועדון",
         "team_name": "שכבת גיל",
         "player_name": "שם שחקן",
-        "age_group": "שנתון",
+        "age_group": "גיל",
         "player_id": "מזהה שחקן",
         "total_minutes": "סך הכל דקות",
         "minutes_percentage": "אחוז דקות",
         "minutes_rank": "דירוג ברוטציה",
-        "total_goals": "שערים"
+        "total_goals": "שערים",
+        "goals_rank": "דירוג בטבלת הכובשים"
     }
 
     title = "שחקנים פוטנציאלים למחלקת נוער בהפועל ירושלים"

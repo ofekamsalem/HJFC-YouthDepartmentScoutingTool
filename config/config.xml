@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <year>2025</year>
-    <season_id>26</season_id>
-    <base_league_url_en>https://www.football.org.il/en/leagues/league/?league_id={league_id}&amp;season_id=26</base_league_url_en>
+    <year>2026</year>
+    <season_id>27</season_id>
+    <base_league_url_en>https://www.football.org.il/en/leagues/league/?league_id={league_id}&amp;season_id=27</base_league_url_en>
     <base_club_url_en>https://www.football.org.il/en/clubs/club/?club_id={club_id}&amp;</base_club_url_en>
     <base_club_url>https://www.football.org.il/clubs/club/?club_id={club_id}&amp;</base_club_url>
-    <base_team_url_en>https://www.football.org.il/en/team-details/?team_id={team_id}&amp;season_id=26</base_team_url_en>
-    <base_team_url>https://www.football.org.il/team-details/?team_id={team_id}&amp;season_id=26</base_team_url>
+    <base_team_url_en>https://www.football.org.il/en/team-details/?team_id={team_id}&amp;season_id=27</base_team_url_en>
+    <base_team_url>https://www.football.org.il/team-details/?team_id={team_id}&amp;season_id=27</base_team_url>
     <base_game_url>https://www.football.org.il/leagues/games/game/?game_id={game_id}&amp;</base_game_url>
-    <base_player_url>https://www.football.org.il/players/player/?player_id={player_id}&amp;season_id=26</base_player_url>
-    <base_team_games_url>https://www.football.org.il/team-details/team-games/?team_id={team_id}&amp;season_id=26</base_team_games_url>
-    <base_team_players_list_url>https://www.football.org.il/team-details/?itemid=%7B2AE09DED-5019-4C49-BFD5-4458C66F9D24%7D&amp;team_id={team_id}&amp;season_id=26</base_team_players_list_url>
+    <base_player_url>https://www.football.org.il/players/player/?player_id={player_id}&amp;season_id=27</base_player_url>
+    <base_team_games_url>https://www.football.org.il/team-details/team-games/?team_id={team_id}&amp;season_id=27</base_team_games_url>
+    <base_team_players_list_url>https://www.football.org.il/team-details/?itemid=%7B2AE09DED-5019-4C49-BFD5-4458C66F9D24%7D&amp;team_id={team_id}&amp;season_id=27</base_team_players_list_url>
 
     <rules_for_unused_players>
         <minutes_percentages>

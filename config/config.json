@@ -1,15 +1,15 @@
 {
-    "year": "2025",
-    "season id": "26",
-    "base league url en": "https://www.football.org.il/en/leagues/league/?league_id={league_id}&season_id=26",
+    "year": "2026",
+    "season id": "27",
+    "base league url en": "https://www.football.org.il/en/leagues/league/?league_id={league_id}&season_id=27",
     "base club url en": "https://www.football.org.il/en/clubs/club/?club_id={club_id}&",
     "base club url": "https://www.football.org.il/clubs/club/?club_id={club_id}&",
-    "base team url en": "https://www.football.org.il/en/team-details/?team_id={team_id}&season_id=26",
-    "base team url": "https://www.football.org.il/team-details/?team_id={team_id}&season_id=26",
+    "base team url en": "https://www.football.org.il/en/team-details/?team_id={team_id}&season_id=27",
+    "base team url": "https://www.football.org.il/team-details/?team_id={team_id}&season_id=27",
     "base game url": "https://www.football.org.il/leagues/games/game/?game_id={game_id}&",
-    "base player url": "https://www.football.org.il/players/player/?player_id={player_id}&season_id=26",
-    "base team games url": "https://www.football.org.il/team-details/team-games/?team_id={team_id}&season_id=26",
-    "base team_players list url": "https://www.football.org.il/team-details/?itemid=%7B2AE09DED-5019-4C49-BFD5-4458C66F9D24%7D&team_id={team_id}&season_id=26",
+    "base player url": "https://www.football.org.il/players/player/?player_id={player_id}&season_id=27",
+    "base team games url": "https://www.football.org.il/team-details/team-games/?team_id={team_id}&season_id=27",
+    "base team_players list url": "https://www.football.org.il/team-details/?itemid=%7B2AE09DED-5019-4C49-BFD5-4458C66F9D24%7D&team_id={team_id}&season_id=27",
     "rules for unused players": {
         "minutes percentages": {
             "minimum": "25",

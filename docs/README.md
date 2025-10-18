@@ -10,9 +10,9 @@ The tool scrapes data from the Israeli Football Association (IFA) website, proce
 
 At the start of the program, the user can choose between three scouting focuses:
 
-1. Rotation-edge players – players on the edge of the squad rotation.  
-2. Players playing above their age group – players competing in older age categories.  
-3. Top scorers – high-impact attacking players.
+1. Rotation-edge players - players on the edge of the squad rotation.  
+2. Players playing above their age group - players competing in older age categories.  
+3. Top scorers.
 
 ---
 
@@ -47,23 +47,13 @@ A potential player is identified if they meet the conditions defined for the sel
 
 - Ranked 5th or higher on the team’s goals leaderboard.
 
----
+--- 
 
 ## Configuration
 
 All parameters are configurable and can be tuned to the preferences and scouting philosophy of the Youth Department Manager – Mr. Lior Houga (e.g., thresholds, ranks, match windows, etc.) via the project’s XML config file.
 
 ---
-
-## How to Run (Python + Selenium)
-
-### Prerequisites
-- Python 3.10–3.12 recommended  
-- Google Chrome or Microsoft Edge installed  
-- Selenium 4+ 
-
-
-
 
 ## License
 This project is proprietary software.  
